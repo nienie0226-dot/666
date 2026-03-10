@@ -1,27 +1,10 @@
-x = int(input("請輸入一個正整數："))
+total = int(input("請輸入一個正整數："))
 
-if (x<=0):
+# text1.py 檔案內容
+def calculate_sum(n):  # 這裡的名稱要對
+    total = 0
+    for i in range(1, n + 1):
+        total += i
+    return total
 
-	print("您輸入的值小於等於0")
-
-else:
-
-	for i in range(x):
-
-		print(i)
-
-def square(y):
-
-	print("{} 的平方為 {}".format(y, y*y))
-
-x = int(input("請輸入一個正整數："))
-
-if (x<=0):
-
-	print("您輸入的值小於等於0")
-
-else:
-
-	for i in range(x):
-
-		square(i)
+print(total)
